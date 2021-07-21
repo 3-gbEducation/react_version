@@ -6,6 +6,7 @@ const NavBar = () => {
 	const [dropdown, setDropdown] = useState(false);
 	const [showSearchBar, setShowSearchBar] = useState(false);
 	const showDropDownHandler = () => {
+		console.log("clicking");
 		setDropdown(!dropdown);
 	};
 	const showSearchBarHandler = () => {
