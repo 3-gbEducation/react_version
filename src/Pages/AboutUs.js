@@ -78,6 +78,7 @@ const AboutUs = () => {
                       frameborder="0"
                       allow="autoplay; fullscreen"
                       allowfullscreen
+                      className="about-video"
                     ></iframe>
                   </div>
                 </div>
