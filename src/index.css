@@ -95,6 +95,10 @@ input {
   width: auto;
   min-height: 600px;
 }
+.about-video {
+  height: 80vh;
+  width: 80vw;
+}
 
 /* Media queries */
 @media (max-width: 750px) {
