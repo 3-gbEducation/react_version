@@ -11,18 +11,18 @@ import Contact from './Pages/Contact';
 import AboutUs from './Pages/AboutUs';
 import Blogs from './Pages/Blogs';
 import Login from './Pages/Login';
+import Soon from './Pages/Soon';
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Footer />
 			<NavBar />
 			<Switch>
 				<Route exact path='/'>
 					<Home />
 				</Route>
-				<Route exact path='/tutor'>
+				<Route exact path='/find-tutor'>
 					<Tutor />
 				</Route>
 				<Route exact path='/latest'>
@@ -37,13 +37,17 @@ function App() {
 				<Route exact path='/contact'>
 					<Contact />
 				</Route>
-				<Route exact path='/about-us'>
+				<Route exact path='/about'>
 					<AboutUs />
 				</Route>
 				<Route exact path='/login'>
 					<Login />
 				</Route>
+				<Route exact path='/soon'>
+					<Soon />
+				</Route>
 			</Switch>
+			<Footer />
 		</>
 	);
 }

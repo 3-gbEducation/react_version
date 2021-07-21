@@ -21,7 +21,9 @@ const NavBar = () => {
 				<div className='container-fluid'>
 					<nav className='navbar navbar-expand-lg stroke'>
 						<h1>
-							<NavLink className='navbar-brand d-flex align-items-center' to='/'>
+							<NavLink
+								className='navbar-brand d-flex align-items-center'
+								to='/'>
 								<img
 									src={logo}
 									style={{ backgroundColor: 'white', padding: '5px' }}
@@ -45,7 +47,7 @@ const NavBar = () => {
 						<div className='collapse navbar-collapse' id='navbarTogglerDemo02'>
 							<ul className='navbar-nav ml-lg-auto'>
 								<li className='nav-item'>
-									<NavLink className='nav-link' to='/tutor'>
+									<NavLink className='nav-link' to='/find-tutor'>
 										Find a Tutor
 									</NavLink>
 								</li>
@@ -80,7 +82,7 @@ const NavBar = () => {
 												Blogs
 											</NavLink>
 											<NavLink
-												to='/about-us'
+												to='/about'
 												className='dropdown-item'
 												id='menu-item-34'>
 												About Us
@@ -111,7 +113,8 @@ const NavBar = () => {
 
 								{showSearchBar && (
 									<div className='search-right ml-lg-3' id='search-bar'>
-										<form onSubmit={searchFormHandler}
+										<form
+											onSubmit={searchFormHandler}
 											action='#search'
 											method='GET'
 											className='search-box position-relative'>
@@ -126,7 +129,10 @@ const NavBar = () => {
 												/>
 											</div>
 											<button type='submit' className='btn search-btn'>
-												<i className='fa fa-search' aria-hidden='true'></i>
+												<i
+													className='fa fa-search'
+													aria-hidden='true'
+													onSubmit={searchFormHandler}></i>
 											</button>
 										</form>
 									</div>
