@@ -1,7 +1,7 @@
 import React from "react";
 import image4 from "../../assets/images/image.png";
 
-const About_2_section = () => {
+const Help = () => {
   return (
     <section className="w3l-about-2 pb-5">
       <div className="container pb-md-5 pb-4 mb-5">
@@ -33,4 +33,4 @@ const About_2_section = () => {
   );
 };
 
-export default About_2_section;
+export default Help;

@@ -5,7 +5,7 @@ import Grid from "./HomeComponent/Grid";
 import Welcome from "./HomeComponent/Welcome";
 import BottomBanner from "./HomeComponent/BottomBanner";
 import Banner from "./HomeComponent/Banner";
-import About_2_section from "./HomeComponent/About_2_section";
+import Help from "./HomeComponent/Help";
 
 const Home = () => {
   return (
@@ -29,7 +29,7 @@ const Home = () => {
       <StudentFeedback />
 
       {/* about-2 section */}
-      <About_2_section />
+      <Help />
       {/* //about-2 section */}
     </div>
   );
