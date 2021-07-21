@@ -15851,7 +15851,7 @@ h3.title-main:after {
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background:  no-repeat center;
   background-size: cover;
 }
 
@@ -16109,7 +16109,7 @@ h3.title-main:after {
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: no-repeat;
+  background: url(owl.video.play.png) no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;

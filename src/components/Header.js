@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,9 +10,9 @@ const Header = () => {
 							<div className='top-headers'>
 								<ul>
 									<li>
-										<a href='/contact' className='d-sm-block d-none'>
+										<NavLink to='/contact' className='d-sm-block d-none'>
 											Have any question ?
-										</a>
+										</NavLink>
 									</li>
 									<li>
 										<i className='fa fa-phone'></i>
