@@ -43,6 +43,9 @@ function App() {
 				<Route exact path='/login'>
 					<Login />
 				</Route>
+				<Route exact path='/signup'>
+					<SignUp />
+				</Route>
 				<Route exact path='/soon'>
 					<Soon />
 				</Route>
