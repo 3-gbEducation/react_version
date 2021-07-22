@@ -13,7 +13,9 @@ const AboutUs = () => {
     //   Inner Banner
     <div className="about">
       <div className="inner-banner" id="about">
-        <section className="w3l-breadcrumb"></section>
+        <section className="w3l-breadcrumb">
+
+        </section>
       </div>
 
       {/* //Inner Banner */}
@@ -35,10 +37,8 @@ const AboutUs = () => {
             <div className="col-lg-6 left-wthree-img-video text-righ pr-lg-5 mt-lg-0 mt-5">
               <div className="position-relative text-center">
                 <img src={AboutImage} alt="" className="img-fluid" />
-                <a
-                  className="popup-with-zoom-anim play-view text-center position-absolute"
-                  onClick={() => setOpen(!open)}
-                >
+                <a className="popup-with-zoom-anim play-view text-center position-absolute" href="#video"
+                  onClick={() => setOpen(!open)}>
                   <span className="video-play-icon">
                     <span className="fa fa-play"></span>
                   </span>
@@ -70,10 +70,11 @@ const AboutUs = () => {
                     }}
                     onClick={() => setOpen(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </h2>
                   <div className="zoom-anim-dialog">
-                    <iframe
+                    <iframe 
+                      title='a video'
                       src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0"
                       frameborder="0"
                       allow="autoplay; fullscreen"
