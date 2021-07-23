@@ -22,6 +22,9 @@ input {
 }
 
 /* About page */
+.about {
+  overflow-x: hidden;
+}
 
 .whyus {
   min-height: 100vh;
@@ -95,6 +98,7 @@ input {
   width: auto;
   min-height: 600px;
 }
+
 .about-video {
   height: 80vh;
   width: 80vw;
