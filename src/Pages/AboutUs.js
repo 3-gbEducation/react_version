@@ -12,7 +12,9 @@ const AboutUs = () => {
     //   Inner Banner
     <div className="about">
       <div className="inner-banner" id="about">
-        <section className="w3l-breadcrumb"></section>
+        <section className="w3l-breadcrumb">
+
+        </section>
       </div>
 
       {/* //Inner Banner */}

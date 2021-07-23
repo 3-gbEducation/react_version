@@ -3527,7 +3527,7 @@ input[type="button"].btn-block {
   top: 100%;
   left: 0;
   z-index: 1000;
-  display: none;
+
   float: left;
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -4635,7 +4635,7 @@ input[type="button"].btn-block {
 }
 
 #search-bar{
-  display: none;
+
 }
 
 * {
@@ -16109,7 +16109,7 @@ h3.title-main:after {
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url(owl.video.play.png) no-repeat;
+  background: no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -17532,9 +17532,7 @@ h3.title-big {
 /*# sourceMappingURL=style-freedom.css.map */
 
 /* added by kanika - about us page*/
-<<<<<<< HEAD
 
-=======
 .whyus{
   min-height: 100vh;
   
@@ -17591,5 +17589,5 @@ h3.title-big {
   padding: 10px;
  
 }
->>>>>>> main
+
 /* kanika - about us page */
