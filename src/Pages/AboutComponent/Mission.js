@@ -24,7 +24,7 @@ const Mission = () => {
           <div className="col-lg-6 left-wthree-img-video text-righ pr-lg-5 mt-lg-0 mt-5">
             <div className="position-relative text-center">
               <img src={AboutImage} alt="" className="img-fluid" />
-              <a
+              <a 
                 className="popup-with-zoom-anim play-view text-center position-absolute"
                 onClick={() => setOpen(!open)}
               >
@@ -67,6 +67,7 @@ const Mission = () => {
                     allow="autoplay; fullscreen"
                     allowFullScreen
                     className="about-video"
+                    title ="some content video"
                   ></iframe>
                 </div>
               </div>
