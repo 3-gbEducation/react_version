@@ -116,3 +116,21 @@ input {
     font-size: 0.8rem !important;
   }
 }
+
+/* Blog Page */
+.pagination a {
+  padding: 0.5rem 1rem;
+  margin: 0 6px;
+  border: 1px solid #ff6e65;
+  border-radius: 4px;
+  outline: none;
+  color: #000000 !important;
+}
+.pagination a:hover {
+  background: #ff6e65;
+  color: #ffffff !important;
+}
+.active a {
+  background-color: #ff6e65;
+  color: #ffffff !important;
+}
