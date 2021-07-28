@@ -221,34 +221,24 @@ export const archive = (date) => {
   };
 
   if (localStorage.archive) {
-    console.log("Present");
-    let ab = JSON.parse(localStorage.archive);
-    if (moment(ab[0].startDate).format("DD") < startDate.getDate()) {
-      console.log("Old");
-      if (
-        startDate.getDate() == 7 ||
-        startDate.getDate() == 14 ||
-        startDate.getDate() == 21 ||
-        startDate.getDate() == 28
-      ) {
-        localStorage.removeItem("archive");
-        for (let i = 0; i < 5; i++) {
-          prevDate = startDate.addDays(-7);
-          const ab = { week: i, startDate, prevDate };
-          archives.push(ab);
-          startDate = prevDate;
-        }
-        localStorage.setItem("archive", JSON.stringify(archives));
-      } else {
-        console.log("Not Old");
-        archives = ab;
+    if (
+      startDate.getDate() == 7 ||
+      startDate.getDate() == 14 ||
+      startDate.getDate() == 21 ||
+      startDate.getDate() == 28
+    ) {
+      localStorage.removeItem("archive");
+      for (let i = 0; i < 5; i++) {
+        prevDate = startDate.addDays(-7);
+        const ab = { week: i, startDate, prevDate };
+        archives.push(ab);
+        startDate = prevDate;
       }
+      localStorage.setItem("archive", JSON.stringify(archives));
     } else {
-      console.log("Updated");
-      archives = ab;
+      archives = JSON.parse(localStorage.archive);
     }
   } else {
-    console.log("Absent");
     for (let i = 0; i < 5; i++) {
       prevDate = startDate.addDays(-7);
       const ab = { week: i, startDate, prevDate };
@@ -257,7 +247,6 @@ export const archive = (date) => {
     }
     localStorage.setItem("archive", JSON.stringify(archives));
   }
-  // console.log(archives);
 
   return archives;
 };
