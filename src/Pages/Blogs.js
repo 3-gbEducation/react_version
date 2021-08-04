@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import InnerBanner from "./BlogComponent/InnerBanner";
+import Main from "./BlogComponent/Main";
 
 const Blogs = () => {
-    return (
-        <div>
-            <h1>BlogPage</h1>
-        </div>
-    )
-}
+  return (
+    <div
+      className="blogs"
+      style={{
+        boxSizing: "border-box",
+      }}
+    >
+      <InnerBanner />
+      <Main />
+    </div>
+  );
+};
 
-export default Blogs
+export default Blogs;
