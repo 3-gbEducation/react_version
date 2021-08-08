@@ -16,6 +16,9 @@ const NavBar = () => {
 		e.preventDefault();
 		setShowSearchBar(!showSearchBar);
 	}
+	const handleThemeChange = (e) =>{
+		console.log('theme change\n');
+	}
 	return (
 		<>
 			<header id='site-header' className='fixed-top'>
@@ -146,7 +149,7 @@ const NavBar = () => {
 											{' '}
 										</label>
 										<input type='checkbox' id='checkbox' />
-										<div className='mode-container'>
+										<div className='mode-container' onClick={handleThemeChange}>
 											<i className='gg-sun'></i>
 											<i className='gg-moon'></i>
 										</div>
