@@ -1,0 +1,82 @@
+
+    "name": " Rajneesh Khare",
+    "Class1to5":true,
+    "Class1to5Details": {
+        "subjects" : [
+           "Maths" , "Science"
+        ],
+        "pricingFixed" : false,
+        "minPricingPerHour" : 150,
+        "maxPricingPerHour" :200
+    },
+    "Class6to8": true,
+    "Class6to8Details" : {
+       "subjects" :[
+           "Maths","Science","Social Science","Computers"
+       ],
+        "pricingFixed" : false,
+        "minPricingPerHour" : 150,
+        "maxPricingPerHour" : 250
+    },
+    "Class9to10" : true,
+    "Class9to10Details" : {
+        "subjects" : [
+            "Maths","Social Science","Physics","Chemistry","Computers"
+        ],
+        "pricingFixed" : false,
+        "minPricingPerHour" : 250,
+        "maxPricingPerHour" : 300
+    },
+    "Class11to12" : true,
+    "Class11to12Details" : {
+        "subjects" : [
+            "Maths","Physics","Chemistry","Computers"
+        ],
+        "pricingFixed" : true,
+        "minPricingPerHour" :300,
+        "maxPricingPerHour" : 300
+    },
+    "competitive" : false,
+    "competitiveDetails" : {
+        "subjects" : null,
+        "pricingFixed" : false,
+        "minPricingPerHour" : null,
+        "maxPricingPerHour" : null
+    },
+    "informationTechnology" : true,
+    "informationTechnologyDetails" : {
+        "subjects" : [
+            "Python"
+        ],
+        "pricingFixed" : false,
+        "minPricingPerHour" : 200,
+        "maxPricingPerHour" : 300
+    },
+    "languages" : false,
+    "languagesDetails" : {
+        "subjects" : null,
+        "pricingFixed" : false,
+        "minPricingPerHour" : null,
+        "maxPricingPerHour" : null
+    },
+    "knows" : [
+        "English","Hindi" 
+    ],
+    "daysOfAvailability" : {
+        "monday" : true,
+        "tuesday" : true,
+        "wednesday" : true,
+        "thursday" : true,
+        "friday" : true,
+        "saturday" : true,
+        "sunday" : false
+    },
+    "timeSlots" : {
+        "6amTo9am" : false,
+        "9amTo12pm" : false,
+        "12pmTo3pm" : false,
+        "3pmTo6pm" : true,
+        "6pmTo9pm" : false,
+        "9pmTo12am" : false
+    }
+    
