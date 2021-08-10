@@ -1,30 +1,8 @@
 {
-<<<<<<< HEAD
   "name": "react_version",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-=======
-  "name": "3-gb-react",
-  "version": "0.1.0",
-  "private": true,
-  "proxy": "http://localhost:5000/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "client": "0.0.1",
-    "moment": "^2.29.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-paginate": "^7.1.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.3",
-    "web-vitals": "^1.1.2"
-  },
->>>>>>> 98c31b66443582c8637cfb47068af9ca9b5003a0
   "scripts": {
     "prepare": "postinstall",
     "postinstall": "cd client && npm install",
