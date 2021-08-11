@@ -10,71 +10,77 @@ const Courses = () => {
   // Json Data Immitation
   const courses = [
     {
+      id: 1,
       std: "Class 1 - 4",
       msg: "Children are the future, teach them well and let them lead the way.",
       img: image1,
     },
     {
+      id: 2,
       std: "Class 5 - 8",
       msg: "Education’s purpose is to replace an empty mind with an open one.",
       img: image2,
     },
     {
+      id: 3,
       std: "Class 9 - 10",
       msg: "Education is learning what you didn’t even know you didn’t know.",
       img: image3,
     },
     {
+      id: 4,
       std: "Class 11 - 12",
       msg: "Education must not simply teach work – it must teach Life.",
       img: image4,
     },
     {
+      id: 5,
       std: "Programming",
       msg: "First, solve the problem. Then, write the code.",
       img: image5,
     },
     {
+      id: 6,
       std: "Language Learning",
       msg: "Knowledge of languages is the doorway to wisdom.",
       img: image6,
     },
   ];
   return (
-    <div class="w3l-grids-block-5 py-5">
-      <div class="container py-md-5 py-4">
-        <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4">
-          <h3 class="title-main">
+    <div className="w3l-grids-block-5 py-5">
+      <div className="container py-md-5 py-4">
+        <div className="title-heading-w3 text-center mx-auto mb-5 pb-sm-4">
+          <h3 className="title-main">
             Pick a Course to <span>Get Started</span>
           </h3>
         </div>
-        <div class="row">
+        <div className="row">
           {courses.map((course) => (
-            <div class="col-lg-4 col-md-5 mt-md-5 mt-5">
-              <div class="blog-card-single">
-                <div class="grids5-info position-relative">
+            <div className="col-lg-4 col-md-5 mt-md-5 mt-5" key={course.id}>
+              <div className="blog-card-single">
+                <div className="grids5-info position-relative">
                   <img
                     src={course.img}
                     alt=""
-                    class="img-fluid"
+                    className="img-fluid"
                     style={{ height: "210px" }}
                   />
-                  <div class="course-price-item"></div>
+                  <div className="course-price-item"></div>
                 </div>
-                <div class="content-main-top">
-                  <div class="content-top mb-4 mt-3"></div>
+                <div className="content-main-top">
+                  <div className="content-top mb-4 mt-3"></div>
                   <h4>
                     <a href="/find-tutor">{course.std}</a>
                   </h4>
                   <p>{course.msg}</p>
-                  <div class="top-content-border d-flex align-items-center justify-content-between mt-5 pt-4">
-                    <ul class="rating-list"></ul>
+                  <div className="top-content-border d-flex align-items-center justify-content-between mt-5 pt-4">
+                    <ul className="rating-list"></ul>
                     <a
-                      class="btn btn-style btn-style-primary"
+                      className="btn btn-style btn-style-primary"
                       href="/find-tutor"
                     >
                       Know Details
-                      <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+                      <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -82,13 +88,13 @@ const Courses = () => {
             </div>
           ))}
         </div>
-        <div class="text-center mt-5">
+        <div className="text-center mt-5">
           <a
-            class="btn btn-style btn-style-secondary mt-sm-3"
+            className="btn btn-style btn-style-secondary mt-sm-3"
             href="/find-tutor"
           >
             Browse more courses
-            <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+            <i className="fa fa-arrow-right ml-2" aria-hidden="true"></i>
           </a>
         </div>
       </div>

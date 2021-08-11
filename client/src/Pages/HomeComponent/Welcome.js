@@ -3,16 +3,19 @@ import React from "react";
 const Welcome = () => {
   const welcome = [
     {
+      id: 1,
       icon: "fa fa-graduation-cap",
       title: "Dedicated Educators",
       desc: "Learning is easier when you have an excellent teacher. That's why most of our educators have achieved an advanced degree in their field. Our their lessons.",
     },
     {
+      id: 2,
       icon: "fa fa-users",
       title: "First rate curriculum",
       desc: "Are you a beginner, expert, or somewhere in between? Not to worry! We offer a variety of high-quality courses designed to prepare you for your next step.",
     },
     {
+      id: 3,
       icon: "fa fa-book",
       title: "Commitment to Excellence",
       desc: "Our mission is to embrace the pursuit of excellence both inside and outside the classroom. We encourage critical thinking and emphasize the learning process over rote memorization.",
@@ -29,7 +32,7 @@ const Welcome = () => {
           </div>
           <div className="row features text-center">
             {welcome.map((data) => (
-              <div className="col-lg-4 col-sm-6">
+              <div className="col-lg-4 col-sm-6" key={data.id}>
                 <div className="feature-body">
                   <div className="feature-images">
                     <span className={data.icon} aria-hidden="true"></span>

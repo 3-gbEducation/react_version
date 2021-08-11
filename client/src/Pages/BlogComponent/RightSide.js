@@ -51,6 +51,8 @@ const RightSide = ({
           {result.map((res) => (
             <li key={res}>
               <a
+                href='!#'
+                id='cat_links'
                 onClick={(e) => {
                   e.preventDefault();
                   setCategory(res);
@@ -103,6 +105,7 @@ const RightSide = ({
           {result1.map((res) => (
             <li key={res.week}>
               <a
+                href='!#'
                 onClick={(e) => {
                   e.preventDefault();
                   searchArchive(res.startDate, res.prevDate);
@@ -121,6 +124,7 @@ const RightSide = ({
         <h6 className="heading-small-text-9">Tags</h6>
         {result2.map((tag) => (
           <a
+            href='!#'
             key={tag}
             onClick={(e) => {
               e.preventDefault();

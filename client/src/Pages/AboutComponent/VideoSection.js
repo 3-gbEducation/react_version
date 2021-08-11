@@ -42,7 +42,7 @@ const VideoSection = () => {
         <div className="col-lg-6 col-sm-12 justify-content-center">
           <div className="boxcontainr">
             {rightData.map((data) => (
-              <div className="box1 area-box">
+              <div className="box1 area-box" key={data.title}>
                 <div>
                   <img src={data.icon} alt="" />
                   <h4> {data.title}</h4>

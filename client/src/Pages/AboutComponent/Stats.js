@@ -25,7 +25,7 @@ const Stats = () => {
         <div className="w3-stats">
           <div className="row text-center">
             {stats.map((data) => (
-              <div className="col-lg-3 col-sm-6">
+              <div className="col-lg-3 col-sm-6" key={data.title}>
                 <div className="counter">
                   <h1 className="mb-3">{data.count}</h1>
                   <p className="count-text">{data.title}</p>

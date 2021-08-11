@@ -24,7 +24,7 @@ const LeftSide = ({ blogs, title }) => {
       <div className="blog-article-post" key={blog.id}>
         <div className="blog-post d-flex flex-wrap align-content-between">
           <a href={`/blog/${blog.id}`}>
-            <img src={blog.image} className="img-fluid" alt="blog-post-image" />
+            <img src={blog.image} className="img-fluid" alt="" />
           </a>
           <div className="px-2 py-4">
             <ul className="blog-author-date d-flex justify-content-between mb-3">

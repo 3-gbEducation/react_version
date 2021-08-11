@@ -1,5 +1,3 @@
-import moment from "moment";
-
 export const blogs = [
   {
     id: "1",
@@ -200,9 +198,10 @@ export const blogs = [
 
 export const categories = (blogs) => {
   var list = ["All"];
-  blogs.map((blog) => {
-    list.push(blog.category);
-  });
+  
+  for (let i = 0; i < blogs.length; i++) {
+    list.push(blogs[i].category);
+  }
   list = Array.from(new Set(list));
   return list;
 };
@@ -214,7 +213,7 @@ export const archive = (date) => {
 
   let archives = [];
 
-  Date.prototype.addDays = function (days) {
+  const addDays = (startDate, days) => {
     var date = new Date(this.valueOf());
     date.setDate(date.getDate() + days);
     return date;
@@ -222,14 +221,14 @@ export const archive = (date) => {
 
   if (localStorage.archive) {
     if (
-      startDate.getDate() == 7 ||
-      startDate.getDate() == 14 ||
-      startDate.getDate() == 21 ||
-      startDate.getDate() == 28
+      parseInt(startDate.getDate()) === 7 ||
+      parseInt(startDate.getDate()) === 14 ||
+      parseInt(startDate.getDate()) === 21 ||
+      parseInt(startDate.getDate()) === 28
     ) {
       localStorage.removeItem("archive");
       for (let i = 0; i < 5; i++) {
-        prevDate = startDate.addDays(-7);
+        prevDate = addDays(startDate, -7);
         const ab = { week: i, startDate, prevDate };
         archives.push(ab);
         startDate = prevDate;
@@ -240,7 +239,7 @@ export const archive = (date) => {
     }
   } else {
     for (let i = 0; i < 5; i++) {
-      prevDate = startDate.addDays(-7);
+      prevDate = addDays(startDate, -7);
       const ab = { week: i, startDate, prevDate };
       archives.push(ab);
       startDate = prevDate;
@@ -254,9 +253,10 @@ export const archive = (date) => {
 // tags
 export const tags = (blogs) => {
   let single = [];
-  blogs.map((blog) => {
-    single = Array.from(new Set([...single, ...blog.tags]));
-  });
+  
+  for (let i = 0; i < blogs.length; i++) {
+    single = Array.from(new Set([...single, ...blogs[i].tags]));
+  }
 
   let arr = [];
 

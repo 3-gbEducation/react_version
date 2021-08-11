@@ -32,7 +32,7 @@ const BottomBanner = () => {
       <div className="container">
         <div className="grids-area-hny main-cont-wthree-fea row">
           {banner.map((data) => (
-            <div className="col-lg-3 col-md-5 px-lg-2 mt-lg-0 mt-3">
+            <div className="col-lg-3 col-md-5 px-lg-2 mt-lg-0 mt-3" key={data.text}>
               <div className={`area-box ${data.color}`}>
                 <i className={data.icon} aria-hidden="true"></i>
                 <h4>

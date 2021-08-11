@@ -24,7 +24,8 @@ const Mission = () => {
           <div className="col-lg-6 left-wthree-img-video text-righ pr-lg-5 mt-lg-0 mt-5">
             <div className="position-relative text-center">
               <img src={AboutImage} alt="" className="img-fluid" />
-              <a 
+              <a
+                href='!#'
                 className="popup-with-zoom-anim play-view text-center position-absolute"
                 onClick={() => setOpen(!open)}
               >
@@ -58,14 +59,13 @@ const Mission = () => {
                   }}
                   onClick={() => setOpen(false)}
                 >
-                  <i class="fas fa-times"></i>
+                  <i className="fas fa-times"></i>
                 </h2>
                 <div className="zoom-anim-dialog">
                   <iframe
                     src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0"
                     frameBorder="0"
                     allow="autoplay; fullscreen"
-                    allowFullScreen
                     className="about-video"
                     title ="some content video"
                   ></iframe>

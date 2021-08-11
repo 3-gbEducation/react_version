@@ -7,6 +7,7 @@ const StudentFeedback = () => {
   // JSON data immitation
   const feedback = [
     {
+      id: 1,
       name: "Ryan Edison",
       feedback:
         "The tutors are very approachable and available to answer anyquestion at any time. 3-GB has quickly become my go-toe-learning platform.",
@@ -14,6 +15,7 @@ const StudentFeedback = () => {
       img: image1,
     },
     {
+      id: 2,
       name: "Sandra Hunter",
       feedback:
         "This is an outstanding platform which is easily affordable. The service was superb and the amenities outmatch the competition.",
@@ -21,6 +23,7 @@ const StudentFeedback = () => {
       img: image2,
     },
     {
+      id: 3,
       name: "Pallavi Thalasani",
       feedback:
         "With 3-GB, I was able to start learning online and eventually build up enough knowledge and skills to transistion into a well-paying career",
@@ -39,7 +42,7 @@ const StudentFeedback = () => {
           </div>
           <div className="row content-sec mt-md-5">
             {feedback.map((fdb) => (
-              <div className="col-lg-4 col-md-5 testi-sections mt-md-5 mt-4">
+              <div className="col-lg-4 col-md-5 testi-sections mt-md-5 mt-4" key={fdb.id}>
                 <div className="testimonials_grid">
                   <p className="sub-test">
                     <q>{fdb.feedback}</q>

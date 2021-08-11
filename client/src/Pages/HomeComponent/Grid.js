@@ -3,18 +3,22 @@ import React from "react";
 const Grid = () => {
   const grid = [
     {
+      id: 1,
       icon: "fa fa-american-sign-language-interpreting",
       text: "Flexible Classes",
     },
     {
+      id: 2,
       icon: "fa fa-download",
       text: "Personalised Learning",
     },
     {
+      id: 3,
       icon: "fa fa-headphones",
       text: "One-on-One",
     },
     {
+      id: 4,
       icon: "fa fa-play-circle",
       text: "Learn from Home",
     },
@@ -30,7 +34,7 @@ const Grid = () => {
                 <div className="col-xl-8">
                   <div className="fea-gd-vv row">
                     {grid.map((data) => (
-                      <div className="col-md-5 pt-md-5 mt-md-5 mt-4">
+                      <div className="col-md-5 pt-md-5 mt-md-5 mt-4" key={data.id}>
                         <div className="d-flex align-items-center feature-gd ">
                           <div className="icon">
                             <i className={data.icon} aria-hidden="true"></i>

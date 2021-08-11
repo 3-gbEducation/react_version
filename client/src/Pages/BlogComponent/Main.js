@@ -79,13 +79,13 @@ const Main = () => {
       behavior: "smooth",
     });
     const arr = [];
-    console.log(tag);
     blogs.map((blog) => {
       for (let i = 0; i < blog.tags.length; i++) {
         if (blog.tags[i] === tag) {
           arr.push(blog);
         }
       }
+      return null;
     });
     console.log(arr);
     setTitle(`Tag : ${tag}`);
