@@ -4,12 +4,15 @@ const uri = "mongodb+srv://admin:admin123@cluster0.ciipg.mongodb.net/myFirstData
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 const dbName = 'react_version'
 
+
+
 async function getTutorData(callback) {
+    let data = [];
     try {
         await client.connect();
         const collection = client.db(dbName ).collection("tutors");
 
-        const query = {"name": "Praveen Divakar"};
+        const query = {};
         const options = {};
         const cursor = collection.find(query, options);
         // print a message if no documents were found
@@ -17,10 +20,11 @@ async function getTutorData(callback) {
             console.log("No documents found!");
         }
         // replace console.dir with your callback to access individual elements
-        await cursor.forEach(console.dir);
-        console.dir(cursor);
+        await cursor.forEach(item => data.push(item));
+        // console.dir(cursor);
 
     } finally {
+        callback(data)
         await client.close();
     }
 }

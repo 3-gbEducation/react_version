@@ -1,10 +1,11 @@
 const express = require('express');
-// const axios = require('axios');
 const app = express();
-const port = 5000;
+var cors = require('cors');
 
-// const indexRouter = require('./server/routes/index');
-// app.use('/backend',indexRouter);
+app.use(cors())
+
+const indexRouter = require('./server/routes/index');
+app.use('/backend',indexRouter);
 
 app.get('/tutorslist', (req, res) => {
     const user = req.body;
