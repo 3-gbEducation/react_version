@@ -19,88 +19,77 @@ import NotFound from './NotFound';
 import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
 import Admin from './Admin/Admin';
+import React from 'react';
 
 function App() {
 	return (
-		<>
-		<Switch>
-			<Route exact path='/'>
-				<Header />
-				<NavBar />
-				<Home />
-				<Footer />
-			</Route>
-			<Route exact path='/find-tutor'>
-				<Header />
-				<NavBar />
-				<Tutor />
-				<Footer />
-			</Route>
-			<Route exact path='/latest'>
-				<Header />
-				<NavBar />
-				<LatestUpadate />
-				<Footer />
-			</Route>
-			<Route exact path='/micro-courses'>
-				<Header />
-				<NavBar />
-				<MicroCourses />
-				<Footer />
-			</Route>
-			<Route exact path='/blogs'>
-				<Header />
-				<NavBar />
-				<Blogs />
-				<Footer />
-			</Route>
-			<Route exact path='/contact'>
-				<Header />
-				<NavBar />
-				<Contact />
-				<Footer />
-			</Route>
-			<Route exact path='/about'>
-				<Header />
-				<NavBar />
-				<AboutUs />
-				<Footer />
-			</Route>
-			<Route exact path='/login'>
-				<Header />
-				<NavBar />
-				<Login />
-				<Footer />
-			</Route>
-			<Route exact path='/signup'>
-				<Header />
-				<NavBar />
-				<SignUp />
-				<Footer />
-			</Route>
-			<Route exact path='/soon'>
-				<Header />
-				<NavBar />
-				<Soon />
-				<Footer />
-			</Route>
-			<Route exact path='/team'>
-				<Header />
-				<NavBar />
-				<Team />
-				<Footer />
-			</Route>
-			<Route exact path='/admin'>
-				<Admin />
-			</Route>
-			<Route exact path ='/*'>
-				<Header />
-				<NavBar />
-				<NotFound />
-				<Footer />
-			</Route>
-		</Switch>
-		</>
+		<React.Fragment>	
+		<Header />
+		<NavBar />
+			<Switch>
+				<Route exact path='/'>
+					<Home />
+				</Route>
+				<Route exact path='/find-tutor'>
+					<Tutor />
+				</Route>
+				<Route exact path='/latest'>
+					<LatestUpadate />
+				</Route>
+				<Route exact path='/micro-courses'>
+					<MicroCourses />
+				</Route>
+				<Route exact path='/blogs'>
+					<Blogs />
+				</Route>
+				<Route exact path='/contact'>
+					<Contact />
+				</Route>
+				<Route exact path='/about'>
+					<AboutUs />
+				</Route>
+				<Route exact path='/login'>
+					<Login />
+				</Route>
+				<Route exact path='/signup'>
+					<SignUp />
+				</Route>
+				<Route exact path='/soon'>
+					<Soon />
+				</Route>
+				<Route exact path='/team'>
+					<Team />
+				</Route>
+				<Route exact path='/admin'>
+					<Admin />
+				</Route>
+				<Route exact path='/tutors/1-5'>
+					<TutorBody category='class 1 to 5' />
+				</Route>
+				<Route exact path='/tutors/6-8'>
+					<TutorBody category='class 6 to 8' />
+				</Route>
+				<Route exact path='/tutors/9-10'>
+					<TutorBody category='class 9 to 10' />
+				</Route>
+				<Route exact path='/tutors/11-12'>
+					<TutorBody category='class 11 to 12' />
+				</Route>
+				<Route exact path='/tutors/competitive'>
+					<TutorBody category='competitive' />
+				</Route>
+				<Route exact path='/tutors/infoTech'>
+					<TutorBody category='iT' />
+				</Route>
+				<Route exact path='/tutors/languages'>
+					<TutorBody category='languages' />
+				</Route>
+				<Route exact path='/*'>
+					<NotFound />
+				</Route>
+			</Switch>
+			<Footer />
+		</React.Fragment>
 	);
 }
 

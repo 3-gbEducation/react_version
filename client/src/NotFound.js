@@ -1,4 +1,5 @@
 // src\assets\images\notfound.svg
+import { Link } from 'react-router-dom'
 import notfound from './assets/images/notfound.svg'
 
 const NotFound=()=>{
@@ -15,7 +16,9 @@ const NotFound=()=>{
                 <div className='col-lg-6 align-content-center'>
                     <p className='mt-2'>We're sorry, but the page you're trying to go does not exist or may have been moved.</p>
                     <br />
-                    <button className='btn btn-style btn-outline-secondary btn-block mt-4'>Go back to Home Page</button>
+                    <button className='btn btn-style btn-outline-secondary btn-block mt-4'>
+                        <Link to='/'>Go back to Home Page</Link>
+                    </button>
                 </div>
                 </div>
             </div>

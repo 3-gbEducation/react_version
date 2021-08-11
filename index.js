@@ -1,17 +1,24 @@
 const express = require('express');
-const axios = require('axios');
+// const axios = require('axios');
 const app = express();
-const port = process.env.PORT || 5000;
+const port = 5000;
 
+// const indexRouter = require('./server/routes/index');
+// app.use('/backend',indexRouter);
 
+app.get('/tutorslist', (req, res) => {
+    const user = req.body;
+    res.json({
+        data: "Hello there!"
+    })
+})
 
-var mode;
-if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    // dev code
-    mode = 'Development Mode';
-} else {
-    // production code
-    mode='Production Mode';
-}
+app.get('/hello', (req, res) => {
+    res.json({
+        "message": "hi"
+    })
+})
 
-app.listen(port, () => console.log(`Listening on port ${port} in ${mode}`));
+app.listen(5000, () => {
+    console.log('Server is listening on port 5000 currently...')
+});
