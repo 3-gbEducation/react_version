@@ -38,8 +38,8 @@ const StudentFeedback = () => {
             </h3>
           </div>
           <div className="row content-sec mt-md-5">
-            {feedback.map((fdb) => (
-              <div className="col-lg-4 col-md-5 testi-sections mt-md-5 mt-4">
+            {feedback.map((fdb,index) => (
+              <div key={index} className="col-lg-4 col-md-5 testi-sections mt-md-5 mt-4">
                 <div className="testimonials_grid">
                   <p className="sub-test">
                     <q>{fdb.feedback}</q>

@@ -28,8 +28,8 @@ const Welcome = () => {
             </h3>
           </div>
           <div className="row features text-center">
-            {welcome.map((data) => (
-              <div className="col-lg-4 col-sm-6">
+            {welcome.map((data,index) => (
+              <div key={index} className="col-lg-4 col-sm-6">
                 <div className="feature-body">
                   <div className="feature-images">
                     <span className={data.icon} aria-hidden="true"></span>

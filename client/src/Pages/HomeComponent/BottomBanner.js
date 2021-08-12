@@ -31,8 +31,9 @@ const BottomBanner = () => {
     <section className="w3l-bottom-grids-6 pb-lg-5 text-center" id="services">
       <div className="container">
         <div className="grids-area-hny main-cont-wthree-fea row">
-          {banner.map((data) => (
-            <div className="col-lg-3 col-md-5 px-lg-2 mt-lg-0 mt-3">
+          {banner.map((data,index) => (
+            
+            <div key={index} className="col-lg-3 col-md-5 px-lg-2 mt-lg-0 mt-3">
               <div className={`area-box ${data.color}`}>
                 <i className={data.icon} aria-hidden="true"></i>
                 <h4>
