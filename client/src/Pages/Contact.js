@@ -83,7 +83,6 @@ const Contact = () => {
 							<div className='col-md-7 mt-md-0 mt-4' id='map'>
 								<div className='map-iframe'>
 									<iframe
-										width='100%'
 										frameBorder='0'
 										scrolling='yes'
 										width='600'
