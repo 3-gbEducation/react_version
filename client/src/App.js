@@ -19,10 +19,11 @@ import SignUp from './Pages/SignUp';
 import NotFound from './NotFound';
 import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
+import Admin from './Admin/Admin';
 
 function App() {
 	return (
-		<React.Fragment>
+		<React.Fragment>	
 			<Switch>
 				<Route exact path='/'>
 					<Header />
@@ -90,26 +91,29 @@ function App() {
 					<Team />
 					<Footer />
 				</Route>
+				<Route exact path='/admin'>
+					<Admin />
+				</Route>
 				<Route exact path='/tutors/1-5'>
-					<TutorBody category="1-5" />
+					<TutorBody category='class 1 to 5' />
 				</Route>
 				<Route exact path='/tutors/6-8'>
-					<TutorBody category="6-8" />
+					<TutorBody category='class 6 to 8' />
 				</Route>
 				<Route exact path='/tutors/9-10'>
-					<TutorBody category="9-10" />
+					<TutorBody category='class 9 to 10' />
 				</Route>
 				<Route exact path='/tutors/11-12'>
-					<TutorBody category="11-12" />
+					<TutorBody category='class 11 to 12' />
 				</Route>
-				<Route exact path='/tutors/programming'>
-					<TutorBody category="prog" />
+				<Route exact path='/tutors/competitive'>
+					<TutorBody category='competitive' />
 				</Route>
-				<Route exact path='/tutors/IT'>
-					<TutorBody category="IT" />
+				<Route exact path='/tutors/infoTech'>
+					<TutorBody category='iT' />
 				</Route>
 				<Route exact path='/tutors/languages'>
-					<TutorBody category="languages" />
+					<TutorBody category='languages' />
 				</Route>
 				<Route exact path ='/*'>
 				</Route>
@@ -164,7 +168,6 @@ function App() {
 					<Footer />
 				</Route>
 			</Switch>
-			<Footer />
 		</React.Fragment>
 	);
 }

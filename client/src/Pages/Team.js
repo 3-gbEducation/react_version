@@ -1,10 +1,10 @@
 import React from 'react'
+import Page from './Teams/Page'
 
 const Team = () => {
     return (
         <div>
-            <h1>BlogPage</h1>
-            <h1>Coming soon</h1>
+           <Page />
         </div>
     )
 }
