@@ -19,7 +19,6 @@ import SignUp from './Pages/SignUp';
 import NotFound from './NotFound';
 import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
-// import Ad
 
 function App() {
 	return (
@@ -114,9 +113,7 @@ function App() {
 				</Route>
 				<Route exact path ='/*'>
 				</Route>
-				<Route exact path='/admin'>
-					{/* <Admin /> */}
-				</Route>
+				
 				<Route exact path='/tutors/1-5'>
 					<Header />
 					<NavBar />
