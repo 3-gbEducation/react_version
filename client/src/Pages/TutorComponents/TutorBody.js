@@ -1,12 +1,3 @@
-<<<<<<< Updated upstream
-import TutorMenu from "./TutorMenu";
-
-export default function TutorBody(props){
-    return(
-        <div>
-            <TutorMenu />
-            {props.category}
-=======
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Container, Grid } from "semantic-ui-react";
@@ -219,7 +210,6 @@ export default function TutorBody(props) {
             }
           </Grid>
 
->>>>>>> Stashed changes
         </div>
       </div>
     )

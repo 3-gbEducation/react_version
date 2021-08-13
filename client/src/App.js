@@ -1,6 +1,7 @@
 import './assets/css/style-liberty.css';
 import './assets/css/style-starter.css';
 import 'semantic-ui-css/semantic.min.css'
+import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
@@ -18,17 +19,11 @@ import SignUp from './Pages/SignUp';
 import NotFound from './NotFound';
 import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
+// import Ad
 
 function App() {
 	return (
-<<<<<<< Updated upstream
-		<>
-			<Header />
-			<NavBar />
-=======
 		<React.Fragment>
-
->>>>>>> Stashed changes
 			<Switch>
 				<Route exact path='/'>
 					<Header />
@@ -97,7 +92,6 @@ function App() {
 					<Footer />
 				</Route>
 				<Route exact path='/tutors/1-5'>
-<<<<<<< Updated upstream
 					<TutorBody category="1-5" />
 				</Route>
 				<Route exact path='/tutors/6-8'>
@@ -119,7 +113,11 @@ function App() {
 					<TutorBody category="languages" />
 				</Route>
 				<Route exact path ='/*'>
-=======
+				</Route>
+				<Route exact path='/admin'>
+					{/* <Admin /> */}
+				</Route>
+				<Route exact path='/tutors/1-5'>
 					<Header />
 					<NavBar />
 					<TutorBody category='class 1 to 5' />
@@ -164,17 +162,13 @@ function App() {
 				<Route exact path='/*'>
 					<Header />
 					<NavBar />
->>>>>>> Stashed changes
+
 					<NotFound />
 					<Footer />
 				</Route>
 			</Switch>
-<<<<<<< Updated upstream
 			<Footer />
-		</>
-=======
 		</React.Fragment>
->>>>>>> Stashed changes
 	);
 }
 

@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import { useEffect, useReducer, useState } from 'react'
 import { Button, Divider, Grid, Icon, List, Modal, Transition } from 'semantic-ui-react'
 
@@ -97,4 +95,3 @@ export default function TutorCard(props) {
         // </Transition>
     )
 }
->>>>>>> Stashed changes
