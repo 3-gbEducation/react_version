@@ -5,7 +5,7 @@ var cors = require('cors');
 app.use(cors())
 
 const indexRouter = require('./server/routes/index');
-app.use('/backend',indexRouter);
+app.use('/data',indexRouter);
 
 app.get('/tutorslist', (req, res) => {
     const user = req.body;

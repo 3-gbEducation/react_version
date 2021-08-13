@@ -8,7 +8,7 @@ app.use(cors())
 
 var corsOptions = {
     origin: 'http://localhost:5000/',
-    optionsSuccessStatus: 200 
+    optionsSuccessStatus: 200
   }
 
 router.get('/list',cors(corsOptions),(req,res)=>{
