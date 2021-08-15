@@ -95,30 +95,6 @@ function App() {
 					<Admin />
 				</Route>
 				<Route exact path='/tutors/1-5'>
-					<TutorBody category='class 1 to 5' />
-				</Route>
-				<Route exact path='/tutors/6-8'>
-					<TutorBody category='class 6 to 8' />
-				</Route>
-				<Route exact path='/tutors/9-10'>
-					<TutorBody category='class 9 to 10' />
-				</Route>
-				<Route exact path='/tutors/11-12'>
-					<TutorBody category='class 11 to 12' />
-				</Route>
-				<Route exact path='/tutors/competitive'>
-					<TutorBody category='competitive' />
-				</Route>
-				<Route exact path='/tutors/infoTech'>
-					<TutorBody category='iT' />
-				</Route>
-				<Route exact path='/tutors/languages'>
-					<TutorBody category='languages' />
-				</Route>
-				<Route exact path ='/*'>
-				</Route>
-				
-				<Route exact path='/tutors/1-5'>
 					<Header />
 					<NavBar />
 					<TutorBody category='class 1 to 5' />
@@ -163,7 +139,6 @@ function App() {
 				<Route exact path='/*'>
 					<Header />
 					<NavBar />
-
 					<NotFound />
 					<Footer />
 				</Route>
