@@ -68,7 +68,7 @@
   transition: 0.3s ease-out;
 }
 
-.wrappr.profile.btn:hover{
+.wrappr.profile button:hover{
   background: #0C4972;
   color: #fff;
   transition: 0.3s ease-out;

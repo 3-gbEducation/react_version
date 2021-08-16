@@ -3,8 +3,8 @@ import { Button, Divider, Grid, Icon, List, Modal, Transition } from 'semantic-u
 
 const divStyle = {
     border: '3px #e4e4e4 solid',
-    padding: '5px'
-    // backgroundColor: '#e7e7e7'
+    padding: '5px',
+    backgroundColor: '--var(primary-color)'
 }
 
 
@@ -16,20 +16,21 @@ export default function TutorCard(props) {
         <div style={divStyle} >
             <Grid stackable>
                 <Grid.Column width={16} textAlign='center'>
-                    <img src={props.props.image} width='190px' height='190px' style={{ borderRadius: '50%', marginRight: "auto", marginLeft: 'auto' }} alt='some placeholder'></img>
+                    <img src={props.props.image} width='190px' height='190px' style={{ borderRadius: '50%',padding:"3%" }} alt={props.props.name}></img>
                     <h4>{props.props.name}</h4>
                     <p>{props.details.subjects.join(", ")}</p>
                     <Divider horizontal>Bio</Divider>
-                    <p></p>
+                    <p style={{padding:"3%", height:"200px"}}>{props.props.shortBio ? props.props.shortBio : "Hello"}</p>
                     <Divider />
                     <Modal
                         centered
-                        style={{ height: "fit-content", alignSelf: 'center' }}
+                        size='fullscreen'
+                        style={{ height: "fit-content", alignSelf: 'center',margin:"2% 2.5%" }}
                         onClose={() => setOpen(false)}
                         onOpen={() => setOpen(true)}
                         open={open}
                         trigger={
-                            <Button size='large' animated fluid style={{ backgroundColor: "#0c4972", color: '#fff', margin: '5% 0%' }} >
+                            <Button size='large' animated fluid style={{ backgroundColor: "#ff6e65", color: '#fff', margin: '5% 0%' }} >
                                 <Button.Content visible>
                                     <Icon name='arrow right' />
                                 </Button.Content>
@@ -47,7 +48,7 @@ export default function TutorCard(props) {
                             <Grid stackable container textAlign='center'>
                                 <Grid.Row stretched centered >
 
-                                    <Grid.Column width={4} textAlign='center'>
+                                    <Grid.Column width={3} textAlign='center'>
                                         <img src={props.props.image} width='170px' height='170px' style={{ borderRadius: '50%', marginRight: "auto", marginLeft: 'auto',padding:'2%' }} alt='some placeholder'></img>
                                         <p>{props.details.subjects.join(", ")}</p>
                                     </Grid.Column>
@@ -68,15 +69,17 @@ export default function TutorCard(props) {
                                     </Grid.Column>
                                     <Grid.Column width={5}>
                                         <Icon name='quote left' />
-                                        <p>Hello</p>
                                         <br />
-                                        <Icon name='quote right' style={{ float: 'right' }} />
+                                        <p>{props.props.longBio ? props.props.longBio : "Hello"}</p>
+                                        {/* <br /> */}
+                                        <p><Icon name='quote right' style={{ float: 'right' }} /></p>
                                     </Grid.Column>
                                     
                                 </Grid.Row>
                             </Grid>
                         </Modal.Content>
                         <Modal.Actions>
+                            (Click outside to close)
                             <Button negative onClick={() => setOpen(false)}>
                                 Close
                             </Button>
