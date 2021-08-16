@@ -2951,7 +2951,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   top: 100%;
   left: 0;
   z-index: 1000;
- 
+  display: none;
   float: left;
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -13624,12 +13624,12 @@ h3.title-main:after {
 }
 
 .w3l-main-slider .banner-top2 {
-  background:  no-repeat center;
+  background: url(../images/banner3.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top3 {
-  background:  no-repeat center;
+  /* background: url(../images/banner4.jpg) no-repeat center; */
   background-size: cover;
 }
 
@@ -13876,7 +13876,7 @@ h3.title-main:after {
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background:  no-repeat;
+  /* background: url(owl.video.play.png) no-repeat; */
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -15890,7 +15890,7 @@ ul.blog-author-date li i {
 /* 404 error page */
 
 .w3l-content-area .site-main {
-  background: no-repeat bottom;
+  /* background: url(../images/error.jpg) no-repeat bottom; */
   background-size: cover;
   min-height: 100vh;
   position: relative;
