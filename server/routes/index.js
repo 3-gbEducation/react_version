@@ -14,4 +14,7 @@ router.use('/tm',teamRouter);
 const updatesRouter = require('./updates');
 router.use('/updts',updatesRouter);
 
+const reviewsRouter = require('./reviews');
+router.use('/rvws',reviewsRouter);
+
 module.exports = router;

@@ -5,8 +5,8 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import { Route, Switch } from 'react-router-dom';
-import Tutor from './Pages/Tutor';
+import { Redirect, Route, Switch } from 'react-router-dom';
+// import Tutor from './Pages/Tutor';
 import Home from './Pages/Home';
 import MicroCourses from './Pages/MicroCourses';
 import Contact from './Pages/Contact';
@@ -20,6 +20,7 @@ import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
 import Admin from './Admin/Admin';
 import LatestUpdate from './Pages/LatestUpdate';
+import ReviewComponent from './Pages/Reviews';
 
 function App() {
 	return (
@@ -32,10 +33,11 @@ function App() {
 					<Footer />
 				</Route>
 				<Route exact path='/find-tutor'>
-					<Header />
+					{/* <Header />
 					<NavBar />
 					<Tutor />
-					<Footer />
+					<Footer /> */}
+					<Redirect to='/tutors/1-5' />
 				</Route>
 				<Route exact path='/latest'>
 					<Header />
@@ -91,6 +93,12 @@ function App() {
 					<Team />
 					<Footer />
 				</Route>
+				<Route exact path='/re'>
+					<Header />
+					<NavBar />
+					<ReviewComponent />
+					<Footer />
+				</Route>
 				<Route exact path='/admin'>
 					<Admin />
 				</Route>
@@ -142,6 +150,7 @@ function App() {
 					<NotFound />
 					<Footer />
 				</Route>
+				
 			</Switch>
 		</React.Fragment>
 	);

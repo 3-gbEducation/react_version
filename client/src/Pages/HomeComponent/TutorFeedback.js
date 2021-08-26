@@ -4,12 +4,12 @@ import LoadingComponent from "../Loading";
 
 var feedback;
 
-const StudentFeedback = () => {
+const TutorFeedback = () => {
   const [loading, setloading] = useState(true);
   useEffect(() => {
     var config = {
       method: 'get',
-      url: '../data/rvws/stds',
+      url: '../data/rvws/ttrs',
     };
 
     axios(config)
@@ -38,7 +38,7 @@ const StudentFeedback = () => {
             <div className="container py-md-5 py-4">
               <div className="title-heading-w3 text-center mx-auto mb-5 pb-lg-5">
                 <h3 className="title-main">
-                  Student Community <span>Feedback </span>
+                  Tutor Community <span>Feedback </span>
                 </h3>
               </div>
               <div className="row content-sec mt-md-5">
@@ -56,7 +56,7 @@ const StudentFeedback = () => {
                           </div>
                           <div className="testi_grid text-left">
                             <h5>{feedback[i].name}</h5>
-                            <p>{feedback[i].standard}</p>
+                            <p>{feedback[i].subject}</p>
                           </div>
                         </div>
                       </div>
@@ -73,4 +73,4 @@ const StudentFeedback = () => {
   }
 };
 
-export default StudentFeedback;
+export default TutorFeedback;

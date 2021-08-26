@@ -20,7 +20,7 @@ export default class TutorMenu extends Component {
             <div>
                 {/* <Header /> */}
                 <BrowserRouter>
-                    <Menu pointing secondary stackable fluid widths={7} size='large'>
+                    <Menu pointing secondary stackable fluid widths={7} size='massive'>
                         <Menu.Item
 
                             name='class 1 to 5'
