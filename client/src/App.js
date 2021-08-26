@@ -9,7 +9,6 @@ import { Route, Switch } from 'react-router-dom';
 import Tutor from './Pages/Tutor';
 import Home from './Pages/Home';
 import MicroCourses from './Pages/MicroCourses';
-import LatestUpadate from './Pages/LatestUpadate';
 import Contact from './Pages/Contact';
 import AboutUs from './Pages/AboutUs';
 import Blogs from './Pages/Blogs';
@@ -20,6 +19,7 @@ import NotFound from './NotFound';
 import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
 import Admin from './Admin/Admin';
+import LatestUpdate from './Pages/LatestUpdate';
 
 function App() {
 	return (
@@ -40,7 +40,7 @@ function App() {
 				<Route exact path='/latest'>
 					<Header />
 					<NavBar />
-					<LatestUpadate />
+					<LatestUpdate />
 					<Footer />
 				</Route>
 				<Route exact path='/micro-courses'>

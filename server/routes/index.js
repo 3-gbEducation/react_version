@@ -11,4 +11,7 @@ router.use('/ttrs',tutorRouter);
 const teamRouter = require('./team');
 router.use('/tm',teamRouter);
 
+const updatesRouter = require('./updates');
+router.use('/updts',updatesRouter);
+
 module.exports = router;
