@@ -93,7 +93,7 @@ function App() {
 					<Team />
 					<Footer />
 				</Route>
-				<Route exact path='/re'>
+				<Route exact path='/reviews'>
 					<Header />
 					<NavBar />
 					<ReviewComponent />
