@@ -3,16 +3,9 @@ import { Container, Divider, Header, Icon } from 'semantic-ui-react'
 import ListItemLU from './LatestUpdates/ListItemLU'
 import axios from 'axios'
 import LoadingComponent from './Loading';
-
-<<<<<<< HEAD
+var updates=[];
 const LatestUpdate = () => {
     document.title ="3-GB - Updates"
-=======
-var updates;
->>>>>>> main
-
-const LatestUpdate = () => {
-    document.title = "3-GB | Updates"
     const [loading, setloading] = useState(true);
     useEffect(() => {
         var config = {

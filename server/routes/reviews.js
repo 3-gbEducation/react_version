@@ -9,7 +9,6 @@ app.use(cors())
 var corsOptions = {
     origin: 'http://localhost:5000/',
     optionsSuccessStatus: 200
-<<<<<<< HEAD
   }
 
 router.get('/studs',cors(corsOptions),(req,res)=>{
@@ -45,43 +44,5 @@ router.get('/ttrs',cors(corsOptions),(req,res)=>{
       }
 })
 })
-=======
-}
-
-router.get('/stds', cors(corsOptions), (req, res) => {
-    reviewsModel.getStudentReviews(data => {
-        if (data.length > 0) {
-            res.json({
-                "success": true,
-                data
-            })
-        }
-        else {
-            res.json({
-                "success": false,
-                "message": "data not fetched"
-            })
-        }
-    })
-});
-
-router.get('/ttrs', cors(corsOptions), (req, res) => {
-    reviewsModel.getTutorReviews(data => {
-        if (data.length > 0) {
-            res.json({
-                "success": true,
-                data
-            })
-        }
-        else {
-            res.json({
-                "success": false,
-                "message": "data not fetched"
-            })
-        }
-    })
-});
-
->>>>>>> main
 
 module.exports = router;

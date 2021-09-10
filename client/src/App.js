@@ -9,10 +9,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 // import Tutor from './Pages/Tutor';
 import Home from './Pages/Home';
 import MicroCourses from './Pages/MicroCourses';
-<<<<<<< HEAD
 import LatestUpdate from './Pages/LatestUpdate';
-=======
->>>>>>> main
 import Contact from './Pages/Contact';
 import AboutUs from './Pages/AboutUs';
 import Blogs from './Pages/Blogs';
@@ -23,12 +20,7 @@ import NotFound from './NotFound';
 import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
 import Admin from './Admin/Admin';
-<<<<<<< HEAD
 import ReviewsPage from './Pages/Reviews/ReviewsPage';
-=======
-import LatestUpdate from './Pages/LatestUpdate';
-import ReviewComponent from './Pages/Reviews';
->>>>>>> main
 
 function App() {
 	return (
