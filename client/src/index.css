@@ -1,4 +1,5 @@
 /* Home Page */
+
 .form {
   background: #ffffff;
   padding: 2rem;
@@ -12,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 input {
   border: none;
   background: rgb(236, 236, 236);
@@ -22,6 +24,7 @@ input {
 }
 
 /* About page */
+
 .about {
   overflow-x: hidden;
 }
@@ -105,6 +108,7 @@ input {
 }
 
 /* Media queries */
+
 @media (max-width: 750px) {
   .form {
     left: 0;
@@ -118,6 +122,7 @@ input {
 }
 
 /* Blog Page */
+
 .pagination a {
   padding: 0.5rem 1rem;
   margin: 0 6px;
@@ -126,11 +131,74 @@ input {
   outline: none;
   color: #000000 !important;
 }
+
 .pagination a:hover {
   background: #ff6e65;
   color: #ffffff !important;
 }
+
 .active a {
   background-color: #ff6e65;
   color: #ffffff !important;
+}
+
+#signup-container {
+  text-align: center;
+  width: fit-content;
+  background-color: #0c4972;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+  border: 5px white solid;
+}
+
+#header h1 {
+  font-size: 30px;
+  color: white;
+  /* padding-top: 10px; */
+}
+
+#header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#form {
+  /* margin-left: 90px; */
+  padding: 30px;
+  text-align: center;
+}
+
+#form button {
+  margin: 20px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #FF6E65;
+  color: white;
+  padding: 20px;
+  outline-color: transparent;
+}
+
+#form input {
+  margin-bottom: 20px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.span-text a {
+  color: #FF6E65;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.span-text {
+  color: #FF6E65;
+  font-weight: 600;
 }

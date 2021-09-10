@@ -34,10 +34,6 @@ function App() {
 					<Footer />
 				</Route>
 				<Route exact path='/find-tutor'>
-					{/* <Header />
-					<NavBar />
-					<Tutor />
-					<Footer /> */}
 					<Redirect to='/tutors/1-5' />
 				</Route>
 				<Route exact path='/latest'>
