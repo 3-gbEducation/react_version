@@ -25,8 +25,8 @@ const ABoutBottomGrid = () => {
     <section className="w3l-bottom-about py-5">
       <div className="container py-md-5 py-4">
         <div className="grids-area-hny main-cont-wthree-fea row">
-          {gridData.map((data) => (
-            <div className="col-lg-4 col-md-6 grids-feature">
+          {gridData.map((data,index) => (
+            <div key={index} className="col-lg-4 col-md-6 grids-feature">
               <div className="area-box">
                 <span
                   className={`${data.icon} ${data.style}`}

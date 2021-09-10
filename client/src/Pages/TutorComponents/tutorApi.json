@@ -1,0 +1,83 @@
+{
+    "name": "Gahan Gosai",
+    "Class1to5": false,
+    "Class1to5Details": {
+        "subjects": null,
+        "pricingFixed": false,
+        "minPricingPerHour": 0,
+        "maxPricingPerHour": 0
+    },
+    "Class6to8": false,
+    "Class6to8Details": {
+        "subjects": null,
+        "pricingFixed": false,
+        "minPricingPerHour": 0,
+        "maxPricingPerHour": 0
+    },
+    "Class9to10": true,
+    "Class9to10Details": {
+        "subjects": [
+            "Science",
+            "Maths"
+        ],
+        "pricingFixed": true,
+        "minPricingPerHour": 250,
+        "maxPricingPerHour": 250
+    },
+    "Class11to12": true,
+    "Class11to12Details": {
+        "subjects": [
+            "Physics",
+            "Maths"
+        ],
+        "pricingFixed": true,
+        "minPricingPerHour": 250,
+        "maxPricingPerHour": 250
+    },
+    "competitive": false,
+    "competitiveDetails": {
+        "subjects": null,
+        "pricingFixed": false,
+        "minPricingPerHour": 0,
+        "maxPricingPerHour": 0
+    },
+    "informationTechnology": false,
+    "informationTechnologyDetails": {
+        "subjects": null,
+        "pricingFixed": false,
+        "minPricingPerHour": 0,
+        "maxPricingPerHour": 0
+    },
+    "languages": false,
+    "languagesDetails": {
+        "subjects": null,
+        "pricingFixed": false,
+        "minPricingPerHour": 0,
+        "maxPricingPerHour": 0
+    },
+    "knows": [
+        "English",
+        "Hindi",
+        "German"
+    ],
+    "daysOfAvailability": {
+        "monday": true,
+        "tuesday": false,
+        "wednesday": true,
+        "thursday": false,
+        "friday": true,
+        "saturday": false,
+        "sunday": false
+    },
+    "timeSlots": {
+        "9amTo12pm": false,
+        "12pmTo3pm": false,
+        "3pmTo6pm": true,
+        "6pmTo9pm": false,
+        "9pmTo12am": false,
+        "6amTo9am": false
+    },
+    "image": "https://i.ibb.co/FXWD7ZN/Swati-Thakur.jpg",
+    "shortBio": "I have worked in many places to improve my skills , I have rich experience in teaching field & writing . Also I like it at public speaking , project management , blog and book writing . I love to talk with you about our unique approach .",
+    "longBio": " I have worked in many places to improve my skills , I have rich experience in teaching field & writing . Also I like it at public speaking , project management , blog and book writing . I love to talk with you about our unique approach ."
+}

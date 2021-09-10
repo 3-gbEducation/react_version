@@ -29,8 +29,8 @@ const Grid = () => {
                 <div className="col-xl-4"></div>
                 <div className="col-xl-8">
                   <div className="fea-gd-vv row">
-                    {grid.map((data) => (
-                      <div className="col-md-5 pt-md-5 mt-md-5 mt-4">
+                    {grid.map((data,index) => (
+                      <div key={index}className="col-md-5 pt-md-5 mt-md-5 mt-4">
                         <div className="d-flex align-items-center feature-gd ">
                           <div className="icon">
                             <i className={data.icon} aria-hidden="true"></i>

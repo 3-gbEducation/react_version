@@ -29,7 +29,11 @@ async function getStudentReviews(callback) {
     }
 }
 
+<<<<<<< HEAD
 getStudentReviews().catch(console.log('student reviews fetched successfully'));
+=======
+getStudentReviews().catch(console.log('latest updates fetched successfully'));
+>>>>>>> main
 
 module.exports.getStudentReviews = getStudentReviews;
 
@@ -56,7 +60,11 @@ async function getTutorReviews(callback) {
     }
 }
 
+<<<<<<< HEAD
 getTutorReviews().catch(console.log('tutor reviews fetched successfully'));
+=======
+getTutorReviews().catch(console.log('latest updates fetched successfully'));
+>>>>>>> main
 
 module.exports.getTutorReviews = getTutorReviews;
 
