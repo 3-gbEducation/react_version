@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LatestUpadate = () => {
+const LatestUpdate = () => {
     document.title ="3-GB - Updates"
 
     return (
@@ -10,4 +10,4 @@ const LatestUpadate = () => {
     )
 }
 
-export default LatestUpadate
+export default LatestUpdate

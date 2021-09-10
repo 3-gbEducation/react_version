@@ -1,5 +1,5 @@
 var router = require('express').Router();
-var indexPageModel= require('../models/indexPageModel')
+var reviewsModel = require('../models/reviewsModel')
 var express = require('express');
 var cors = require('cors');
 var app = express();
@@ -11,8 +11,8 @@ var corsOptions = {
     optionsSuccessStatus: 200
   }
 
-router.get('/cntnt',cors(corsOptions),(req,res)=>{
-      indexPageModel.getIndexPageContent(data=>{
+router.get('/studs',cors(corsOptions),(req,res)=>{
+      reviewsModel.getStudentReviews(data=>{
         if(data.length > 0){
             res.json({
                 "success" : true,
@@ -25,6 +25,23 @@ router.get('/cntnt',cors(corsOptions),(req,res)=>{
                 "message" : "data not fetched"
             })
         }
+})
+})
+
+router.get('/ttrs',cors(corsOptions),(req,res)=>{
+    reviewsModel.getTutorReviews(data=>{
+      if(data.length > 0){
+          res.json({
+              "success" : true,
+              data
+          })
+      }
+      else{
+          res.json({
+              "success" : false,
+              "message" : "data not fetched"
+          })
+      }
 })
 })
 

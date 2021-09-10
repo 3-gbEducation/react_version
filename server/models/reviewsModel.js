@@ -29,7 +29,7 @@ async function getStudentReviews(callback) {
     }
 }
 
-getStudentReviews().catch(console.log('latest updates fetched successfully'));
+getStudentReviews().catch(console.log('student reviews fetched successfully'));
 
 module.exports.getStudentReviews = getStudentReviews;
 
@@ -56,7 +56,7 @@ async function getTutorReviews(callback) {
     }
 }
 
-getTutorReviews().catch(console.log('latest updates fetched successfully'));
+getTutorReviews().catch(console.log('tutor reviews fetched successfully'));
 
 module.exports.getTutorReviews = getTutorReviews;
 
