@@ -11,10 +11,10 @@ router.use('/ttrs',tutorRouter);
 const teamRouter = require('./team');
 router.use('/tm',teamRouter);
 
-const updatesRouter = require('./updates');
-router.use('/updts',updatesRouter);
+const indexPageRouter = require('./indexPage');
+router.use('/indx',indexPageRouter);
 
-const reviewsRouter = require('./reviews');
-router.use('/rvws',reviewsRouter);
+const reviewRouter = require('./reviews');
+router.use('/fb',reviewRouter);
 
 module.exports = router;
