@@ -21,6 +21,7 @@ import Team from './Pages/Team';
 import TutorBody from './Pages/TutorComponents/TutorBody';
 import Admin from './Admin/Admin';
 import ReviewsPage from './Pages/Reviews/ReviewsPage';
+import ReviewComponent from './Pages/Reviews/ReviewsComponent';
 
 function App() {
 	return (

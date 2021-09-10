@@ -17,4 +17,7 @@ router.use('/indx',indexPageRouter);
 const reviewRouter = require('./reviews');
 router.use('/fb',reviewRouter);
 
+const updatesRouter = require('./updates');
+router.use('/updts',updatesRouter);
+
 module.exports = router;
